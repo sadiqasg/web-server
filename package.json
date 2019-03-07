@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel server.js --out-dir build",
-    "start": "nodemon app.js -e js, hbs",
+    "start": "node app.js",
+    "start-dev": "nodemon app.js -e js, hbs",
     "dev-start": "babel-watch build/server.js"
   },
   "keywords": [],
