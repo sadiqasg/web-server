@@ -50,5 +50,5 @@ app.get('/bad', (req, res) => {
   })
 })
 
-process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`app started on port ${port}`));
