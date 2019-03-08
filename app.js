@@ -50,4 +50,5 @@ app.get('/bad', (req, res) => {
   })
 })
 
-app.listen(5000, () => console.log('app started on port 5000'));
+process.env.PORT || 5000;
+app.listen(port, () => console.log(`app started on port ${port}`));
